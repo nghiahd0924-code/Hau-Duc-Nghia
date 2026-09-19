@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Pure White -->
+    <!-- Gold Gradient High Contrast -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="25%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="85%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef9c3" />
+      <stop offset="40%" stop-color="#facc15" />
+      <stop offset="70%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#713f12" />
+    </linearGradient>
+
+    <linearGradient id="goldDeep" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#713f12" />
+      <stop offset="40%" stop-color="#a16207" />
+      <stop offset="75%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+
+    <!-- Celestial Sapphire Blue Gradient -->
+    <linearGradient id="sapphireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="30%" stop-color="#38bdf8" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0c4a6e" />
+    </linearGradient>
+
+    <radialGradient id="sapphireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Diamond Sparkling Gradient -->
+    <linearGradient id="diamondWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+
+    <!-- Royal Velvet Interior -->
+    <linearGradient id="velvetInterior" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="60%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="crownShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="16" flood-color="#854d0e" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Pure White Background -->
+  <rect width="512" height="512" fill="#ffffff" />
+
+  <!-- Ground Soft Amber Shadow -->
+  <ellipse cx="256" cy="425" rx="175" ry="30" fill="#713f12" opacity="0.18" filter="blur(12px)" />
+
+  <!-- MYTHIC ETERNAL CROWN -->
+  <g filter="url(#crownShadow)">
+
+    <!-- 1. Inner Velvet Dome & Back Rim -->
+    <path d="M125,325 C125,230 185,180 256,180 C327,180 387,230 387,325 Z" fill="url(#velvetInterior)" opacity="0.85" />
+    <!-- Velvet folds & gold threads inside -->
+    <path d="M256,180 Q256,260 256,335" stroke="#facc15" stroke-width="2.5" stroke-linecap="round" opacity="0.4" />
+    <path d="M256,180 Q210,250 180,330" stroke="#facc15" stroke-width="2" stroke-linecap="round" opacity="0.3" />
+    <path d="M256,180 Q302,250 332,330" stroke="#facc15" stroke-width="2" stroke-linecap="round" opacity="0.3" />
+
+    <!-- Back Rim Peaks (Gives 3D depth) -->
+    <polygon points="160,250 180,185 200,250" fill="url(#goldDeep)" opacity="0.7" />
+    <polygon points="312,250 332,185 352,250" fill="url(#goldDeep)" opacity="0.7" />
+
+    <!-- 2. Main Outer Golden Filigree Body -->
+
+    <!-- Outer Left Wing/Peak -->
+    <path d="M90,325 C85,255 105,210 120,180 C125,170 135,178 132,192 C125,225 130,265 142,320 Z" fill="url(#goldLight)" stroke="#ca8a04" stroke-width="1.5" />
+    <!-- Outer Right Wing/Peak -->
+    <path d="M422,325 C427,255 407,210 392,180 C387,170 377,178 380,192 C387,225 382,265 370,320 Z" fill="url(#goldDeep)" stroke="#ca8a04" stroke-width="1.5" />
+
+    <!-- Mid Left Fleur Peak -->
+    <path d="M138,320 C140,240 170,180 185,135 C192,120 198,135 195,155 C190,195 195,245 205,320 Z" fill="url(#goldLight)" stroke="#ca8a04" stroke-width="1.5" />
+    <!-- Mid Right Fleur Peak -->
+    <path d="M374,320 C372,240 342,180 327,135 C320,120 314,135 317,155 C322,195 317,245 307,320 Z" fill="url(#goldDeep)" stroke="#ca8a04" stroke-width="1.5" />
+
+    <!-- Center Majestic Eternal Peak (Highest Pillar) -->
+    <path d="M210,320 C220,230 235,145 250,85 C253,75 259,75 262,85 C277,145 292,230 302,320 Z" fill="url(#goldRim)" stroke="#facc15" stroke-width="2" />
+    <!-- Center Peak Spine Highlight -->
+    <line x1="256" y1="85" x2="256" y2="320" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+
+    <!-- 3. Arches & Ornate Cross Bridges -->
+    <path d="M120,180 Q150,225 185,135 Q220,225 256,85 Q292,225 327,135 Q362,225 392,180" fill="none" stroke="#facc15" stroke-width="4" stroke-linecap="round" />
+    <path d="M120,180 Q150,225 185,135 Q220,225 256,85 Q292,225 327,135 Q362,225 392,180" fill="none" stroke="#713f12" stroke-width="1.5" stroke-dasharray="4,4" />
+
+    <!-- 4. Lower Circlet Base Band (Thanh đai vương miện lớn) -->
+    <!-- Base Curved Ribbon -->
+    <path d="M85,325 C135,350 200,360 256,360 C312,360 377,350 427,325 C430,340 425,375 415,385 C370,410 310,420 256,420 C202,420 142,410 97,385 C87,375 82,340 85,325 Z" fill="url(#goldRim)" stroke="#713f12" stroke-width="2" />
+
+    <!-- Upper Trim of Base Band -->
+    <path d="M85,325 C135,350 200,360 256,360 C312,360 377,350 427,325" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <!-- Lower Trim of Base Band -->
+    <path d="M97,385 C142,410 202,420 256,420 C310,420 370,410 415,385" fill="none" stroke="#ca8a04" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Crown Band Ornate Relief Inset -->
+    <path d="M102,352 C150,373 205,382 256,382 C307,382 362,373 410,352" fill="none" stroke="#713f12" stroke-width="24" stroke-linecap="round" opacity="0.35" />
+
+    <!-- 5. MYTHIC GEMS & SAPPHIRES (Đá quý vĩnh cửu gắn trên vương miện) -->
+
+    <!-- Center Band Giant Sapphire Heart/Oval -->
+    <g transform="translate(256, 385)">
+      <!-- Gold Bezel Frame -->
+      <ellipse cx="0" cy="0" rx="22" ry="26" fill="#facc15" stroke="#713f12" stroke-width="2" />
+      <ellipse cx="0" cy="0" rx="18" ry="22" fill="url(#sapphireGrad)" stroke="#e0f2fe" stroke-width="1.5" />
+      <!-- Facet Sparkles on Main Gem -->
+      <polygon points="0,-16 11,0 0,16 -11,0" fill="#38bdf8" opacity="0.7" />
+      <ellipse cx="-5" cy="-8" rx="4" ry="7" fill="#ffffff" opacity="0.9" />
+      <!-- Radial Glow -->
+      <circle cx="0" cy="0" r="32" fill="url(#sapphireGlow)" />
+    </g>
+
+    <!-- Left Flank Sapphire -->
+    <g transform="translate(180, 375)">
+      <ellipse cx="0" cy="0" rx="15" ry="18" fill="#facc15" stroke="#713f12" stroke-width="1.5" />
+      <ellipse cx="0" cy="0" rx="12" ry="15" fill="url(#sapphireGrad)" stroke="#e0f2fe" stroke-width="1" />
+      <ellipse cx="-3" cy="-5" rx="3" ry="5" fill="#ffffff" opacity="0.85" />
+    </g>
+
+    <!-- Right Flank Sapphire -->
+    <g transform="translate(332, 375)">
+      <ellipse cx="0" cy="0" rx="15" ry="18" fill="#facc15" stroke="#713f12" stroke-width="1.5" />
+      <ellipse cx="0" cy="0" rx="12" ry="15" fill="url(#sapphireGrad)" stroke="#e0f2fe" stroke-width="1" />
+      <ellipse cx="-3" cy="-5" rx="3" ry="5" fill="#ffffff" opacity="0.85" />
+    </g>
+
+    <!-- Outer Left Small Sapphire -->
+    <g transform="translate(122, 355)">
+      <circle cx="0" cy="0" r="10" fill="#facc15" stroke="#713f12" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="8" fill="url(#sapphireGrad)" />
+      <circle cx="-2" cy="-2" r="2.5" fill="#ffffff" />
+    </g>
+
+    <!-- Outer Right Small Sapphire -->
+    <g transform="translate(390, 355)">
+      <circle cx="0" cy="0" r="10" fill="#facc15" stroke="#713f12" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="8" fill="url(#sapphireGrad)" />
+      <circle cx="-2" cy="-2" r="2.5" fill="#ffffff" />
+    </g>
+
+    <!-- 6. DIAMONDS ON SPIKE TIPS (Kim cương trên các đỉnh chóp) -->
+
+    <!-- Center Supreme Diamond Star (Đỉnh cao nhất của Vương miện Vĩnh Cửu) -->
+    <g transform="translate(256, 75)">
+      <!-- Golden Mount -->
+      <circle cx="0" cy="0" r="14" fill="url(#goldRim)" stroke="#713f12" stroke-width="1.5" />
+      <!-- Diamond Gem -->
+      <polygon points="0,-16 12,0 0,16 -12,0" fill="url(#diamondWhite)" stroke="#ffffff" stroke-width="1.5" />
+      <polygon points="0,-10 7,0 0,10 -7,0" fill="#ffffff" />
+    </g>
+
+    <!-- Mid Left Peak Gem -->
+    <g transform="translate(185, 135)">
+      <circle cx="0" cy="0" r="11" fill="url(#goldRim)" stroke="#713f12" stroke-width="1" />
+      <polygon points="0,-12 9,0 0,12 -9,0" fill="url(#diamondWhite)" stroke="#ffffff" stroke-width="1" />
+    </g>
+
+    <!-- Mid Right Peak Gem -->
+    <g transform="translate(327, 135)">
+      <circle cx="0" cy="0" r="11" fill="url(#goldRim)" stroke="#713f12" stroke-width="1" />
+      <polygon points="0,-12 9,0 0,12 -9,0" fill="url(#diamondWhite)" stroke="#ffffff" stroke-width="1" />
+    </g>
+
+    <!-- Outer Left Peak Gem -->
+    <g transform="translate(120, 180)">
+      <circle cx="0" cy="0" r="8" fill="url(#goldRim)" />
+      <polygon points="0,-9 7,0 0,9 -7,0" fill="url(#diamondWhite)" />
+    </g>
+
+    <!-- Outer Right Peak Gem -->
+    <g transform="translate(392, 180)">
+      <circle cx="0" cy="0" r="8" fill="url(#goldRim)" />
+      <polygon points="0,-9 7,0 0,9 -7,0" fill="url(#diamondWhite)" />
+    </g>
+  </g>
+
+  <!-- CELESTIAL MYTHIC SPARKLES & STARS -->
+  <!-- Top Center Huge Sparkle -->
+  <g transform="translate(256, 60) scale(1.1)">
+    <path d="M0,-28 Q0,0 28,0 Q0,0 0,28 Q0,0 -28,0 Q0,0 0,-28 Z" fill="#ffffff" />
+    <circle cx="0" cy="0" r="5" fill="#38bdf8" />
+  </g>
+
+  <!-- Left Shimmer -->
+  <g transform="translate(160, 120) scale(0.65)">
+    <path d="M0,-22 Q0,0 22,0 Q0,0 0,22 Q0,0 -22,0 Q0,0 0,-22 Z" fill="#fef08a" />
+  </g>
+
+  <!-- Right Shimmer -->
+  <g transform="translate(355, 125) scale(0.65)">
+    <path d="M0,-22 Q0,0 22,0 Q0,0 0,22 Q0,0 -22,0 Q0,0 0,-22 Z" fill="#fef08a" />
+  </g>
+
+  <!-- Bottom Sapphire Glimmer -->
+  <g transform="translate(245, 375) scale(0.55)">
+    <path d="M0,-20 Q0,0 20,0 Q0,0 0,20 Q0,0 -20,0 Q0,0 0,-20 Z" fill="#ffffff" />
+  </g>
+</svg>

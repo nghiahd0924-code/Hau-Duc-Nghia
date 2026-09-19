@@ -1,0 +1,10 @@
+{
+  "name": "Remix EngJourney AI",
+  "description": "Hành trình chinh phục tiếng Anh",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
